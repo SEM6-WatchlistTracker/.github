@@ -23,4 +23,4 @@ These were chosen because:
 - A combination of User, FriendsWatchlist and MediaStatistics to show messaging and other communication between services. E.g. FriendsWatchlist needs User data.
 - FriendsWatchlist and MediaStatistics for Real-Time data.
 
-<img src="../project-focus.png" width="100%">
+<img src="project-focus.png" width="100%">
