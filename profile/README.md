@@ -23,6 +23,6 @@ These were chosen because:
 - A combination of User, FriendsWatchlist and MediaStatistics to show synchronous calls and asynchronous messaging between services. E.g. FriendsWatchlist needs User data, FriendsWatchlist sends messages for updating MediaStatistics.
 - FriendsWatchlist was chosen over Watchlist for possible Real-Time editing among friends.
 
-<img src="./profile/Container diagram - project focus.png" width="100%">
+<img src="https://raw.githubusercontent.com/SEM6-WatchlistTracker/.github/main/profile/Container%20diagram%20-%20project%20focus.png" width="100%">
 
 _soon: explanation about sync/async calls._
