@@ -15,12 +15,14 @@ The chosen APIs are:
 - [FriendsWatchlist Service](https://github.com/SEM6-WatchlistTracker/wlt-friendswatchlist-service)
 - [MediaStatistics Service](https://github.com/SEM6-WatchlistTracker/wlt-mediastatistics-service)
 - [Kafka Messaging Bus](https://github.com/SEM6-WatchlistTracker/wlt-kafka-messaging)
-- _[Service discovery](https://github.com/SEM6-WatchlistTracker/wlt-discovery) (completed)_
+- [Service discovery](https://github.com/SEM6-WatchlistTracker/wlt-discovery)
 
 These were chosen because:
 
 - Gateway & Auth Service for security learning outcomes.
-- A combination of User, FriendsWatchlist and MediaStatistics to show messaging and other communication between services. E.g. FriendsWatchlist needs User data.
-- FriendsWatchlist and MediaStatistics for Real-Time data.
+- A combination of User, FriendsWatchlist and MediaStatistics to show synchronous calls and asynchronous messaging between services. E.g. FriendsWatchlist needs User data, FriendsWatchlist sends messages for updating MediaStatistics.
+- FriendsWatchlist was chosen over Watchlist for possible Real-Time editing among friends.
 
-<img src="project-focus.png" width="100%">
+<img src="Container diagram - project focus.png" width="100%">
+
+_soon: explanation about sync/async calls._
