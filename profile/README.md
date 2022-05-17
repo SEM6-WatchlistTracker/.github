@@ -6,24 +6,16 @@ https://github.com/orgs/SEM6-WatchlistTracker/projects/1
 
 ## Focus of the project
 
-_(See the image below.)_
-
-The chosen APIs are:
 - [Gateway](https://github.com/SEM6-WatchlistTracker/wlt-gateway)
 - [Auth Service](https://github.com/SEM6-WatchlistTracker/wlt-auth-service)
-- [User Service](https://github.com/SEM6-WatchlistTracker/wlt-user-service)
-- [FriendsWatchlist Service](https://github.com/SEM6-WatchlistTracker/wlt-friendswatchlist-service)
-- [MediaStatistics Service](https://github.com/SEM6-WatchlistTracker/wlt-mediastatistics-service)
-- [Kafka Messaging Bus](https://github.com/SEM6-WatchlistTracker/wlt-kafka-messaging)
-- [Service discovery](https://github.com/SEM6-WatchlistTracker/wlt-discovery)
-
-These were chosen because:
-
-- Gateway & Auth Service for security learning outcomes.
-- A combination of User, FriendsWatchlist and MediaStatistics to show synchronous calls and asynchronous messaging between services. E.g. FriendsWatchlist needs User data, FriendsWatchlist sends messages for updating MediaStatistics.
-- FriendsWatchlist was chosen over Watchlist for possible Real-Time editing among friends.
+- [User Service](https://github.com/SEM6-WatchlistTracker/wlt-user-service) (complete)
+- [FriendsWatchlist Service](https://github.com/SEM6-WatchlistTracker/wlt-friendswatchlist-service) (complete)
+- [MediaStatistics Service](https://github.com/SEM6-WatchlistTracker/wlt-mediastatistics-service) (complete)
+- [Kafka Messaging Bus](https://github.com/SEM6-WatchlistTracker/wlt-kafka-messaging) (complete)
+- [Service discovery](https://github.com/SEM6-WatchlistTracker/wlt-discovery) (complete)
 
 <img src="https://raw.githubusercontent.com/SEM6-WatchlistTracker/.github/main/profile/Container%20diagram%20-%20project%20focus.png" width="100%">
+<br>
 
 ## Explanation on interservice communication
 
@@ -51,7 +43,12 @@ A complete clarification on the [interservice communication](https://walkingtree
 - Watchlist service is a microservice with [asynchronous](https://cdn.ttgtmedia.com/rms/onlineimages/serverside-asynchronous_inter_service_communication-f.png) interservice communication to **MediaStatistics** via the Kafka messaging bus.
 - FriendsWatchlist service is a microservice with [hybrid](https://cdn.ttgtmedia.com/rms/onlineimages/serverside-hybrid_inter_service_communication-f.png) interservice communication. It has synchronous interservice communication to **User** service, and asynchronous interservice communication to **MediaStatistics** via the Kafka messaging bus.
 
-#### Sources
+### Sources
 - https://www.theserverside.com/answer/Synchronous-vs-asynchronous-microservices-communication-patterns
 - https://greeeg.com/issues/microservices-patterns-synchronous-vs-asynchronous
 - https://walkingtreetech.medium.com/inter-service-communication-in-microservices-c54f41678998
+<br>
+
+## Data structure
+
+...
