@@ -1,3 +1,5 @@
+##### [ [To bottom](https://github.com/SEM6-WatchlistTracker#-to-top-) ]
+
 # About the project
 
 ## Follow the planning
@@ -70,3 +72,5 @@ Most data in my system is always going to be consistent, due to the fact that al
 - MediaStatistics service: statistics for a media are updated based on what's updated in Watchlist and FriendsWatchlist service. MediaStatistics does not have to be online, but the Kafka messaging bus must be online. When the service comes back online, it would retrieve all missed messages.
 
 To keep this data further consistent in case of downtime of services, I could choose to save all unsent requests or do a daily sync.
+
+##### [ [To top](https://github.com/SEM6-WatchlistTracker#-to-bottom-) ]
