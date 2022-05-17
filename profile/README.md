@@ -46,11 +46,10 @@ For 4 I used asynchronous messaging using the Kafka message bus, because:
 
 A complete clarification on the [interservice communication](https://walkingtreetech.medium.com/inter-service-communication-in-microservices-c54f41678998) in my system:
 
-- Gateway has [synchronous](https://cdn.ttgtmedia.com/rms/onlineimages/serverside-synchronous_inter_service_communication-f.png) interservice communication to Auth service.
-- Friends service is a microservice with [synchronous](https://cdn.ttgtmedia.com/rms/onlineimages/serverside-synchronous_inter_service_communication-f.png) interservice communication to User service.
-- Watchlist service is a microservice with [asynchronous](https://cdn.ttgtmedia.com/rms/onlineimages/serverside-asynchronous_inter_service_communication-f.png) interservice communication to MediaStatistics via the Kafka messaging bus.
-- FriendsWatchlist service is a microservice with [hybrid](https://cdn.ttgtmedia.com/rms/onlineimages/serverside-hybrid_inter_service_communication-f.png) interservice communication. It has synchronous interservice communication to User service, and asynchronous interservice communication to MediaStatistics via the Kafka messaging bus.
-- MediaStatistics service is a microservice with [asynchronous](https://cdn.ttgtmedia.com/rms/onlineimages/serverside-asynchronous_inter_service_communication-f.png) interservice communication. It listens to the Kafka messaging bus for any new messages.
+- Gateway has [synchronous](https://cdn.ttgtmedia.com/rms/onlineimages/serverside-synchronous_inter_service_communication-f.png) interservice communication to **Auth** service.
+- Friends service is a microservice with [synchronous](https://cdn.ttgtmedia.com/rms/onlineimages/serverside-synchronous_inter_service_communication-f.png) interservice communication to **User** service.
+- Watchlist service is a microservice with [asynchronous](https://cdn.ttgtmedia.com/rms/onlineimages/serverside-asynchronous_inter_service_communication-f.png) interservice communication to **MediaStatistics** via the Kafka messaging bus.
+- FriendsWatchlist service is a microservice with [hybrid](https://cdn.ttgtmedia.com/rms/onlineimages/serverside-hybrid_inter_service_communication-f.png) interservice communication. It has synchronous interservice communication to User service, and asynchronous interservice communication to **MediaStatistics** via the Kafka messaging bus.
 
 #### Sources
 - https://www.theserverside.com/answer/Synchronous-vs-asynchronous-microservices-communication-patterns
