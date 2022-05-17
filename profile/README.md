@@ -51,4 +51,6 @@ A complete clarification on the [interservice communication](https://walkingtree
 
 ## Data structure
 
-...
+<img src="https://raw.githubusercontent.com/SEM6-WatchlistTracker/.github/main/profile/Services%20Data%20Objects.png" width="100%">
+
+Each microservice has its own database. Each model has its own table in that database with a respected name. For example, Watchlist service has a database 'watchlist-database' with tables 'lists' and 'media'.
