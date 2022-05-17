@@ -54,3 +54,8 @@ A complete clarification on the [interservice communication](https://walkingtree
 <img src="https://raw.githubusercontent.com/SEM6-WatchlistTracker/.github/main/profile/Services%20Data%20Objects.png" width="100%">
 
 Each microservice has its own database. Each model has its own table in that database with a respected name. For example, Watchlist service has a database 'watchlist-database' with tables 'lists' and 'media'.
+<br>
+
+<img src="https://raw.githubusercontent.com/SEM6-WatchlistTracker/.github/main/profile/Example%20Data%20Flow.png" width="100%">
+
+Above is an example of the data usage and how the User service is used in a request for collaborative watchlists and friends. For some get methods like these two, additional information and actions are required to provide a tailored response. 
