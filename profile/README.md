@@ -8,13 +8,15 @@ https://github.com/orgs/SEM6-WatchlistTracker/projects/1
 
 ## Focus of the project
 
-- [Gateway](https://github.com/SEM6-WatchlistTracker/wlt-gateway)
-- [Auth Service](https://github.com/SEM6-WatchlistTracker/wlt-auth-service)
-- [User Service](https://github.com/SEM6-WatchlistTracker/wlt-user-service) (complete)
-- [FriendsWatchlist Service](https://github.com/SEM6-WatchlistTracker/wlt-friendswatchlist-service) (complete)
-- [MediaStatistics Service](https://github.com/SEM6-WatchlistTracker/wlt-mediastatistics-service) (complete)
-- [Kafka Messaging Bus](https://github.com/SEM6-WatchlistTracker/wlt-kafka-messaging) (complete)
-- [Service discovery](https://github.com/SEM6-WatchlistTracker/wlt-discovery) (complete)
+- Gateway
+- Auth Service
+- User Service
+- FriendsWatchlist Service
+- MediaStatistics Service
+- Kafka Messaging Bus
+- Service discovery
+
+The repositories to the focused services have been removed and replaced with one reposotory: [watchlisttracker](https://github.com/SEM6-WatchlistTracker/watchlisttracker). 
 
 <img src="https://raw.githubusercontent.com/SEM6-WatchlistTracker/.github/main/profile/Container%20diagram%20-%20project%20focus.png" width="100%">
 <br>
@@ -23,9 +25,9 @@ https://github.com/orgs/SEM6-WatchlistTracker/projects/1
 
 Most of my requests require only the service itself to get, update or delete information from.\
 There are only four exceptions to this:
-1. Checking the authentication token and role (Auth) before the request is allowed to go through.
+1. Checking the authentication token and role (Auth) before the request is allowed to go through (Gateway).
 2. Getting friend connections (Friends). It requires the user information of each friend.
-3. Getting watchlists between friends (FriendsWatchlist). It requires the user information of the collaborating friend.
+3. Getting watchlists between friends (CollabWatchlist). It requires the user information of the collaborating friend.
 4. Updating statistics of media when it has been added to a watchlist (Watchlist, FriendsWatchlist). It sends the media that has to be changed along with the statistics that have to be adjusted.
 
 For 1, 2 and 3 I used synchronous http requests, because these:
